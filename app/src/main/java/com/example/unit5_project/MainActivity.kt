@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             id = (1..20).random()
 
-
+            getPokemonImageURL(id)
             Glide.with(this)
                 .load(pokeImageURL)
                 .fitCenter()
